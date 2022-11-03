@@ -1,0 +1,471 @@
+/*This file contains styling for all the pages-student,professor,advisor and admin and also for Sign-Up Form*/
+/*SIGN-UP PAGE-KAJA LAKSHMI SAI PRIYA (Form Validations Also)*/
+/*STUDENT PAGE: 1. MANAGE COURSEWORK
+                2. MANAGE CLASS SCHEDULE
+                3. HOMEWORK SUBMISSION
+                4. NOTIFICATIONS
+                5. UPDATE PROFILE
+                6. MANAGE RECORDINGS
+                KAJA LAKSHMI SAI PRIYA(Student Id:1001843857)*/
+/*PROFESSOR PAGE: 1. MANAGE STUDENTS
+                  2. MANAGE STUDENT INFORMATION
+                  3. MANAGE GRADING FOR PROJECTS
+                  4. MAKE ANNOUNCEMENTS 
+                  ADITYA DHEERAJ GUNDA(Student Id: 1001960773*/
+/*ADVISOR PAGE: 1.MANAGE COURSEWORK
+                2.MANAGE PROFESSORS
+                3.MANAGE STUDENTS
+                4.MANAGE STUDENT INFORMATION
+                5.MAKE ANNOUNCEMENTS
+                --- PULAGAM MOHAN VIKAS REDDY(Student Id: 1001916601*/
+/*ADMIN PAGE: 1. ADMIN INSIGHTS
+              2. MANAGE COURSEWORK
+              3. MANAGE STUDENTS
+              4. MANAGE STUDENT INFORMATION
+              5. MAKE ANNOUNCEMENTS
+              ---KAJA LAKSHMI SAI PRIYA*/
+/*ALL THE NAVIGATION PAGES FOR STUDENT, PROFESSOR AND ADVISOR FOLLOWS SAME STYLE FOR SIDE NAVIGATION AND ALSO FOR TABLES AS WELL.*/
+/*SIDE-NAVIGATION--KAJA LAKSHMI SAI PRIYA(Student Id:1001843857), PULAGAM MOHAN VIKAS REDDY(Student Id:1001916601)*/
+/*TABLE CREATION--ADITYA DHEERAJ GUNDA(Student Id:1001960773), PULAGAM MOHAN VIKAS REDDY(Student Id:1001916601)*/
+/*PAGE RESPONSIVENESS FOR STUDENT AND ADMIN PAGES-KAJA LAKSHMI SAI PRIYA(Student Id:1001843857)*/
+/*PAGE REPONSIVENESS FOR ADVISOR PAGE-PULAGAM MOHAN VIKAS REDDY(Student Id:1001916601)*/
+/*PAGE RESPONSIVENESS FOR PROFESSOR'S PAGE-ADITYA DHEERAJ GUNDA(Student Id:1001960773)*/
+/*FORM VALIDATIONS-KAJA LAKSHMI SAI PRIYA(Student Id:1001843857)*/
+body{
+    background-color:rgb(236,223,235);
+}
+/*SIDE-NAVIGATION BAR STYLING*/
+.task-bar ul li{
+    list-style-type:none;
+    padding:30px;
+    text-align:right;
+}
+.task-bar ul li a{
+    margin-left:40px;
+    font-size:20px;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    display:block;
+}
+.task-bar ul li a:hover{
+    background-color:rgb(177,202,206);
+    width:130px;
+    height:70px;
+}
+/*END*/
+/* SIGN-UP PAGE STYLING*/
+.test-page{
+    background-color:rgb(46,159,173);
+    height:752px;
+    width:300px;
+    top:0px;
+    left:0px;
+    position:absolute;
+}
+.titlename{
+    padding:20px;
+    margin-left:40px;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    color:white;
+}
+
+.Register{
+padding:10px;
+margin:30px;
+border-radius: 10px;
+font-size:20px;
+font-weight:bold;
+width:500px;
+margin-left:600px;
+margin-top:150px;
+align-items: center;
+display:flex;
+}
+.Register button{
+margin-top:20px;
+width:100px;
+height:50px;
+background-color: rgb(46,159,173);
+border:3px solid rgb(236,223,235);
+color:rgb(236,223,235);
+font-weight:bold;
+}
+.Register #uploadfile{
+    margin-left:650px;
+}
+#Registration{
+width:200px;
+height:10px;
+padding:10px;
+margin:10px;
+align-items:center;
+text-align:left;
+margin-left:120px;
+border:3px solid rgb(46,159,173);
+}
+#uploadfile{
+width:200px;
+height:10px;
+padding:10px;
+margin:10px;
+align-items:center;
+text-align:left;
+margin-left:300px; 
+}
+
+.Register h3{
+color:rgb(46,159,173);
+text-align:center;
+font-size:30px;
+font-family:'Times New Roman', Times, serif;
+font-weight:bold;
+}
+.login-registerpage{
+    background-image: url('{{asset("images/bg.jpg")}}');
+    background-color:rgb(1, 17, 68);
+    background-size: 300px 752px;
+    height:900px;
+    width:300px;
+    top:0px;
+    left:0px;
+    position:absolute;
+}
+/*END*/
+/*Styling for the table to represent sample data for managing courses, student,professors,etc*/
+th{
+background-color:rgb(1, 17, 68);
+color:white;
+}
+td{
+text-align:left;
+background-color:white;
+color:rgb(1, 17, 68)
+}
+th,td{
+border:3px solid rgb(1, 17, 68);
+}
+table{
+margin-left:600px;
+margin-top:50px;
+padding:10px;
+}
+td{
+padding:10px;
+}
+/*End**/
+/*Styling for Manage Course Schedule-for choosing the date*/
+#choose-date{
+margin-top:100px;
+color:rgb(1, 17, 68);
+font-weight:bold;
+text-align:center;
+}
+#choose-date input{
+border:3px solid rgb(1, 17, 68);
+}
+/*End of styling for Manage Course Schedule*/
+/* Styling for Manage homework submission*/
+.homework-submission{
+margin-left:600px;
+margin-top:100px;
+display:flex;
+align-items: center;
+
+}
+.homework-submission a{
+text-decoration: none;
+color:rgb(236,223,235);
+background-color:rgb(1, 17, 68);
+padding:40px;
+margin:40px;
+}
+.homework-submission a:hover{
+color:rgb(1, 17, 68);
+background-color:seashell;
+}
+#homework-attachement{
+margin-left:600px;
+margin-top:100px;
+}
+#homework-attachement textarea{
+border:3px solid rgb(1, 17, 68);
+width:350px;
+height:150px;
+}
+#attachment{
+background-color:rgb(1, 17, 68);
+margin-left:140px;
+color:rgb(236,223,235);
+font-weight: bold;
+width:80px;
+height:30px;
+}
+/*End of styling for homework submission*/
+/*styling for recieving notifications*/
+#notifications{
+margin-left:400px;
+margin-top:200px;
+text-align:left;
+}
+/*End of styling for recieving notifications.*/
+/*Styling for Updating the Profile*/
+#profile-details{
+    margin-left:670px;
+    margin-top:200px;
+    color:rgb(1, 17, 68);
+    font-weight: bold;
+}
+#profile-details button{
+    text-decoration:none;
+    color:rgb(236,223,235);
+    background-color: rgb(1, 17, 68);
+    padding:30px;
+}
+/*End of Styling*/
+/*Styling for Managing the Recordings*/
+#manage-recordings{
+    margin-left:670px;
+    margin-top:200px;
+}
+/*End of Styling*/
+/*Styling for Making Announcements*/
+#announcement{
+margin-left:700px;
+margin-top:20px;
+border:3px solid rgb(1, 17, 68);
+width:300px;
+height:40px;
+text-align:center;
+}
+#announcement1{
+margin-left:700px;
+margin-top:20px;
+height:100px;
+width:300px;
+border:3px solid rgb(1, 17, 68);
+
+}
+.make-announcement{
+margin-top:50px;
+}
+textarea{
+height:100px;
+}
+#announcement-button{
+background-color:rgb(1, 17, 68);
+color:white;
+width:200px;
+height:30px;
+margin-left:750px;
+margin-top:20px;
+border:1px solid seashell;
+}
+/*End of making announcement*/
+/*CHAT ICON*/
+#footer{
+    display:flex;
+    justify-content: flex-end;
+}
+/*PAGE RESPONSIVENESS FOR TABLET*/
+@media only screen and (max-width:800px) and (min-width:481px){
+    .task-bar ul {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .task-bar ul li{
+        padding:10px;
+    }
+    .login-registerpage{
+        background-image: url('{{asset("images/bg.jpg")}}');
+        background-color:rgb(1, 17, 68);
+        background-size: 800px 500px;
+        background-repeat: no-repeat;
+        height:450px;
+        width:800px;
+        top:0px;
+        left:0px;
+        position:absolute;
+    }
+    table{
+        margin-top:10px;
+        margin-left:120px;
+        
+    }
+    #choose-date{
+        margin-top:10px;
+        color:rgb(1, 17, 68);
+        font-weight:bold;
+        text-align:center;
+        }
+    #course-data{
+        margin-top:10px;
+        margin-left:120px;
+    }
+    .homework-submission{
+        margin-left:120px;
+        margin-top:10px;
+        display:flex;
+        align-items: center;
+    }
+    #homework-attachement{
+        margin-left:120px;
+        margin-top:10px;
+    } 
+    #notifications{
+        margin-left:120px;
+        margin-top:10px;
+        text-align:left;
+    }
+    #profile-details{
+        margin-left:120px;
+        margin-top:10px;
+        color:rgb(1, 17, 68);
+        font-weight: bold;
+    }
+    #manage-recordings{
+        margin-left:120px;
+        margin-top:10px;
+    }
+    #announcement{
+        margin-left:120px;
+        margin-top:10px;
+        border:3px solid rgb(1, 17, 68);
+        width:300px;
+        height:40px;
+        text-align:center;
+    }
+    #announcement1{
+        margin-left:120px;
+    }
+    #announcement-button{
+        margin-left:160px;
+    }
+    #footer{
+        margin-top:500px;
+    }
+    .test-page{
+        background-color:rgb(46,159,173);
+        height:200px;
+        width:800px;
+        top:0px;
+        left:0px;
+        position:absolute;
+    }
+    .Register{
+        padding:10px;
+        margin:30px;
+        border-radius: 10px;
+        font-size:20px;
+        font-weight:bold;
+        width:500px;
+        margin-left:120px;
+        margin-top:300px;
+        align-items: center;
+        display:flex;
+        }
+        
+}
+/*PAGE RESPONSIVENESS FOR MOBILES*/
+@media only screen and (max-width:480px){
+    .test-page{
+        background-color:rgb(46,159,173);
+        height:200px;
+        width:470px;
+        top:0px;
+        left:0px;
+        position:absolute;
+    }
+    .Register{
+        padding:10px;
+        margin:30px;
+        border-radius: 10px;
+        font-size:20px;
+        font-weight:bold;
+        width:50px;
+        margin-left:0px;
+        margin-top:250px;
+        align-items: center;
+        display:flex;
+        }
+    .task-bar ul {
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+    }
+    .task-bar ul li{
+            padding:10px;
+    }
+    .login-registerpage{
+        background-image: url("{{asset('images/bg.jpg')}}");
+        background-color:rgb(1, 17, 68);
+        background-size: 490px 500px;
+        background-repeat: no-repeat;
+        height:450px;
+        width:490px;
+        top:0px;
+        left:0px;
+        position:absolute;
+    }
+    table{
+        margin-top:10px;
+        margin-left:0px;
+    }
+    #choose-date{
+        margin-top:10px;
+        color:rgb(1, 17, 68);
+        font-weight:bold;
+        text-align:center;
+    }
+    #course-data{
+        margin-top:10px;
+        margin-left:0px;
+    }
+    .homework-submission{
+        margin-left:20px;
+        margin-top:10px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    #homework-attachement{
+        margin-left:20px;
+        margin-top:10px;
+    } 
+    #notifications{
+        margin-left:20px;
+        margin-top:10px;
+        text-align:left;
+    }
+    #profile-details{
+        margin-left:20px;
+        margin-top:10px;
+        color:rgb(1, 17, 68);
+        font-weight: bold;
+    }
+    #manage-recordings{
+        margin-left:20px;
+        margin-top:10px;
+    }
+    #announcement{
+        margin-left:20px;
+        margin-top:10px;
+        border:3px solid rgb(1, 17, 68);
+        width:300px;
+        height:40px;
+        text-align:center;
+    }
+    #announcement1{
+         margin-left:20px;
+    }
+    #announcement-button{
+        margin-left:20px;
+    }
+    #footer{
+        margin-top:500px;
+    }
+       
+}

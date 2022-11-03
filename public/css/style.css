@@ -1,0 +1,928 @@
+/* ****
+KAJA LAKSHMI SAI PRIYA-1001843857
+PULAGAM MOHAN VIKAS REDDY-1001916601
+ADITYA DHEERAJ GUNDA-1001960773
+
+***** */
+
+/*This file contains styling for home,aboutus,services,contactus,login,loginrole and dashboard pages*/
+/*HOME-PAGE, NAVIGATION BAR DESIGN, CONTACT-US PAGE,SERVICES--- KAJA LAKSHMI SAI PRIYA(Student Id:1001843857)(Worked on 
+Form Validations, Page-responsiveness also)*/
+/*ABOUT US-PAGE,LOGIN-REGISTER PAGE---PULAGAM MOHAN VIKAS REDDY(Student Id:1001916601)*/
+/*LOGIN-ROLE PAGE, STUDENT/PROFESSOR/ADMIN/ADVISOR LOGIN--- ADITYA DHEERAJ GUNDA(Student Id:1001960773)*/
+/*DASHBOARD FOR STUDENT,ADVISOR, PROFESSOR PAGES-----DONE BY ALL THREE TEAMMATES---KAJA LAKSHMI SAI PRIYA, ADITYA DHEERAJ GUNDA, 
+PULAGAM MOHAN VIKAS REDDY*/
+/*ADMIN DASHBOARD---KAJA LAKSHMI SAI PRIYA*/
+/*****FOR PHP PHASE************/
+/*WE WORKED ON CREATING A BACKEND DATABASE AND LINKED REGISTRATION,LOGIN,STUDENT,PROFESSOR,ADVISOR AND ADMIN PAGES*/
+/*Schema created is as follows: Database:sayitright
+REGISTER(USERNAME,FULLNAME,EMAIL,ADDRESS,CONTACT,PASSWORD,CONFIRMPASS,FILENAME,ROLE)
+STUDENT_COURSE_ENROLLMENT(PROFID,SNO,USERNAME,CID,PROFNAME,SUBJECT,DAYS,FROMTIME,TOTIME)
+HOMEWORK_SUBMISSIONS(USERNAME,SUBJECT,FILENAME,COMMENTS,PROFID,SNO)
+PROFESSOR_COURSES(CID,USERNAME,SUBJECT,SECTION,DAYS,FROMTIME,TOTIME)
+PROFESSOR_ANNOUNCEMENTS(SNO,USERNAME,SECTIONNO,SUBJECT,MESSAGE)
+ADVISOR_ANNOUNCEMENTS(SNO,USERNAME,SECTIONNO,SUBJECT,MESSAGE)
+ADMIN_ANNOUNCEMENTS(SNO,USERNAME,SECTIONNO,SUBJECT,MESSAGE)
+STUDENT_GRADING(PROFID,USERNAME,SUBJECT,COMMENTS,GRADE)*/
+/*REGISTRATION AND LOGIN-SAIPRIYA*/
+/*STUDENT COURSE REGISTRATION AND COUSE MANAGEMENT-PULAGAM MOHAN VIKAS REDDY*/
+/*STUDENT PROFILE UPDATE, MANAGE RECORDING AND PROFESSOR PAGES-SAI PRIYA*/
+/*ADVISOR PAGES-DHEERAJ GUNDA*/
+/*ADMIN PAGES-PULAGAM MOHAN VIKAS REDDY*/
+
+
+body{
+    /*background-color:rgb(233, 202, 202);*/
+    background-color:rgb(236, 233, 225);
+}
+/*NAVIGATION-BAR*/
+.nav-bar{
+    background-color:rgb(46,159,173);
+    color:black;
+    display:flex; 
+    background-size: 50% auto;
+    justify-content: space-between;
+}
+.projectname {
+    font-size:22px;
+    align-items: center;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:50px;
+    padding:1rem;
+    color:black;
+}
+.titlename {
+    font-size:22px;
+    align-items: center;
+    text-align: center;
+    margin-top:10px;
+    padding:1rem;
+}
+.nav-pages ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type:none;
+    
+}
+.task-bar ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type:none;
+}
+.nav-pages li a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    padding:1rem;
+}
+.task-bar li a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    padding:1rem;
+}
+.task-bar li:hover{
+    background-color:rgb(236, 233, 225);
+}
+
+.nav-pages li:hover{
+    background-color:rgb(236,233,225);
+    
+}
+.title{
+    margin-top:50px;
+    position:relative;
+    text-align:center;
+    font-weight: bold;
+    color:rgb(46, 159, 173);
+}
+.title:hover{
+    color:seashell;
+}
+#heading{
+    font-size: 10px;
+}
+#body{
+    font-size: 30px;
+}
+/*END OF NAVIGATION BAR STYLING*/
+/*START OF HOME-PAGE STYLING*/
+#home-page{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(homebg.jpg);
+    background-repeat:no-repeat;
+    background-size:1530px 1000px;
+}
+
+.home-nav-bar{
+    color:black;
+    display:flex;
+    justify-content: space-between;
+}
+.home-nav-pages ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type:none;
+}
+.home-nav-pages li a{
+    color:rgb(46, 159, 173);
+    text-decoration: none;
+    display:block;
+    padding:1rem;
+}
+.home-nav-pages li a:hover{
+    background-color:rgba(255, 245, 238, 0.815);
+    color:rgb(46, 159, 173);
+}
+.start-page{
+    /*background-color:rgb(46, 159, 173);*/
+    /*background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(homebg.jpg);*/
+    height:400px;
+    width:1540px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.form-inline{
+    align-items: center;
+    text-align:center;
+}
+.form-inline input {
+    padding: 10px 20px;
+    border: 1px solid rgb(236, 233, 225);
+    color: black;
+  }
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: rgb(236,233,225);
+    border: 1px solid #ddd;
+    color: black;
+  }
+ /*END OF HOME PAGE STYLING*/ 
+/*START OF ABOUT-US PAGE STYLING*/
+.aboutus-page{
+    background-color:rgb(46,159,173);
+    height:400px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:1540px;
+  
+}
+.abt-nav-pages ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.abt-nav-pages li a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    padding:1rem;
+    font-weight:bold;
+}
+.abt-nav-pages li a:hover{
+    background-color:black;
+    color:white;;
+}
+.sample-projectname{
+    font-size:22px;
+    align-items: center;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:50px;
+    padding:1rem;
+    color:white;
+    font-weight: bold;
+}
+.about-page{
+    color:black;
+    margin-left:10px;
+}
+.about-page button{
+    width:100px;
+    height:50px;
+    background-color:rgb(236,233,225);
+    font-weight: bold;
+    border:10 px solid white;
+    border-color: white;
+}
+.about-sample-page{
+    color:white;
+    text-align:right;
+    margin-right:30px;
+}
+.about-sample-page button{
+    width:100px;
+    height:50px;
+    margin-left:10px;
+    background-color:rgb(236,233,225);
+    font-weight: bold;
+    border:10 px solid white;
+    border-color: white;
+}
+.aboutus-body{
+    margin-top:420px;
+    text-align:center;
+    color:rgb(61, 60, 60);
+    font-weight:bold;
+}
+.aboutus-sample-body{
+    margin-top:420px;
+    text-align:right;
+    color:white;
+    font-weight:bold;
+}
+.aboutus-body a{
+    text-decoration:none;
+    font-weight:bold;
+    color:rgb(46, 159, 173);
+}
+.aboutus-sample-body a{
+    text-decoration:none;
+    font-weight:bold;
+    color:rgb(46, 159, 173);
+}
+/*END OF ABOUT-US PAGE STYLING*/
+/*START OF SERVICES-PAGE STYLING*/
+.services-page{
+    background-color:rgb(46,159,173);
+    width:1540px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:200px;
+}
+.services-data{
+   display:flex;
+   align-items: center;
+   margin-left:70px;
+   margin-top:180px;
+}
+.placeholder{
+   margin:10px;
+   padding:1rem;
+   background-color:rgba(255, 245, 238, 0.815);
+   border-radius: 10px;
+}
+
+.placeholder a{
+   font-weight:bold;
+   font-size:20px;
+   margin-left:400px;
+   text-decoration:none;
+   color:black;
+}
+/*END OF SERVICES-PAGE STYLING*/
+/*START OF CONTACT-PAGE STYLING */
+.contact-page{
+    background-color:rgb(46,159,173);
+    height:300px;
+    width:1530px;
+    position:absolute;
+    top:0px;
+    left:0px; 
+ }
+ .contact-heading{
+     text-align: center;
+     font-size:30px;
+     color:black;
+ }
+ .body-contactpage{
+       margin-top:300px;
+   }
+  #contactdata{
+     margin-top:20px;
+     text-align:center;
+     align-items:center;
+     color:black;
+     font-weight: bold;
+ }
+ .contact-form{
+     text-align:center;
+     margin-top:180px;
+ }
+ .contact-form input{
+     padding:10px 20px;
+     border:1px solid rgb(46,159,173);
+     color:white;
+ }
+ 
+ .contact-form textarea{
+     padding:10px 20px;
+     border:1px solid rgb(46,159,173);
+     color:white;
+     height:200px;
+     width:400px;
+ }
+ 
+ .contact-form button{
+     background-color:rgb(46, 159, 173);
+     color:white;
+     height:50px;
+     width:100px;
+ }
+ /*END OF CONTACT-PAGE STYLING*/
+ /*START OF LOGIN AND REGISTER PAGE STYLING*/
+.login-registerpage{
+    background-color:rgb(46, 159, 173);
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:1540px;
+}
+.login-register{
+    text-align:center;
+    margin-top:300px;
+}
+.login-register .login{
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    background-color:rgb(46, 159, 173);
+    height:100px;
+    width:900px;
+    font-weight:bold;
+    padding:30px;
+}
+.login-register p{
+    margin-top:30px;
+}
+.login-register p a{
+    text-decoration:none;
+    color:rgb(46, 159, 173);
+    font-weight: bold;
+}
+/*END OF LOGIN-REGISTER PAGE STYLING*/
+/*LOGIN-ROLE PAGE*/
+ .login-role{
+    background-color:rgb(236, 233, 225);
+}
+.role-page{
+   background-image:url("canvas-header.jpg");
+   background-color:rgb(243, 175, 49);
+   background-repeat: no-repeat;
+   background-size:1600px 300px;
+   height:300px;
+   margin:0px;
+   overflow:hidden;
+   padding:0px;
+   outline:0;
+   position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+}
+.role-heading{
+   margin-top:250px;
+   color:white;
+   font-family:sans-serif;
+}
+.login-role{
+   display:flex;
+   justify-content: space-between;
+   margin-top:200px;
+   margin-left:150px;;
+}
+.login-role .role{
+   margin-left:60px;
+   text-align:center;
+}
+.login-role a{
+   text-decoration:none;
+   color:white;
+   background-color:rgb(243, 175, 49);
+   height:100px;
+   width:500px;
+   font-weight:bold;
+   padding:30px;
+}
+.login-role a:hover{
+    background-color:white;
+    color:rgb(243,175,49);
+}
+/*END OF LOGIN-ROLE PAGE STYLING*/
+/*LOGIN PAGES FOR STUDENT,PROFESSOR,ADMIN AND ADVISOR HAS SAME STYLING*/
+.student-login{
+    margin-left:680px;
+}
+.student-login label{
+    font-weight: bold;
+    font-size:22px;
+    color:rgb(46,159,173);
+}
+.student-login input{
+    width:300px;
+    height:30px;
+}
+#login-heading{
+    text-align:center;
+    margin-top:200px;
+    color:rgb(46, 159, 173);
+}
+.student-login button{
+    background-color:rgb(46,159,173);
+    color:rgba(255, 245, 238, 0.815);
+    width:100px;
+    height:40px;
+    margin-left:100px;
+    font-weight:bold;
+}
+/*END OF LOGIN PAGE STYLING*/
+/*DASHBOARD PAGE FOR STUDENT,PROFESSOR,ADVISOR*/
+#professor-page{
+    /*background-color:rgb(97, 164, 173);*/
+    background-image: url("bg.jpg");
+    background-color:rgb(1,17,68);
+    background-size:1530px 1400px ;
+    background-repeat: no-repeat;
+}
+.professor-navigation{
+    color:white;
+    display:flex;
+    justify-content:space-between;
+
+}
+.professor-navigation ul li a{
+    color:white;
+}
+.professor-navigation a:hover{
+    display:block;
+    background-color:seashell;
+    color:black
+}
+/*STYLING FOR DISPLAYING DASHBOARD IMAGES WITH FLEXBOX*/
+.management{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top:100px;
+    margin-left:50px;
+}
+.management .element{
+    padding:50px;
+}
+.element{
+    position:relative;
+}
+.element p{
+font-weight: bold;
+color:white;
+text-align:center;
+}
+.element img{
+    border:3px solid seashell;
+}
+.element p a{
+    text-decoration: none;
+    color:white;
+}
+/*END OF STYLING FOR DASHBOARD*/
+/*STYLING FOR ADMIN PAGE*/
+#admin-page{
+    /*background-color:rgb(97, 164, 173);*/
+    background-color:seashell;
+    background-size:1530px 1400px ;
+    background-repeat: no-repeat;
+}
+.admin-homepage{
+    display:flex;
+}
+.admin-homepage ul li{
+    list-style-type: none;
+    color:black;
+}
+.admin-homepage ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.admin-insights{
+    display:flex;
+    margin-left:250px;
+}
+.admin-insights ul{
+    display:flex;
+    padding:10px;
+    
+}
+.admin-insights ul li{
+    list-style-type:none;
+    margin:10px;
+    padding:10px;
+    background-color:white;
+    text-align:center;
+}
+.admin-insights ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+.admin-navigation{
+    color:black;
+    display:flex;
+    justify-content:space-between;
+
+}
+.admin-navigation ul li a{
+    color:black;
+}
+#pie_chart{
+    margin-left:380px;
+    margin-top:50px;
+    background-color:rgba(255, 245, 238, 0.815);
+    width:20px;
+}
+#donutchart{
+    
+    margin-top:50px;
+    background-color:rgba(255, 245, 238, 0.815);
+    width:20px;
+}
+.admin-navigation a:hover{
+    display:block;
+    background-color:black;
+    color:white;
+}
+/*END OF STYLING FOR ADMIN PAGE*/
+/*STYLING FOR DISPLAYING CHAT ICON*/
+#footer{
+    display:flex;
+    justify-content: flex-end;
+}
+/*END*/
+
+/*PAGE-RESPONSIVENESS IN TABLETS*/
+@media only screen and (max-width:800px) and (min-width:481px){
+    .nav-pages ul{
+        display:flex;
+        flex-direction:column;
+      
+    }
+    .home-nav-pages ul{
+        display:flex;
+        flex-direction:column;
+      
+    }
+    #home-page{
+        background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(homebg.jpg);
+        background-repeat:no-repeat;
+        background-size:800px 1200px;
+    }
+    .home-nav-bar{
+        color:black;
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .home-nav-pages li a{
+        color:rgb(46, 159, 173);
+        text-decoration: none;
+        display:block;
+        padding:1rem;
+    }
+    .home-nav-pages li a:hover{
+        background-color:rgba(255, 245, 238, 0.815);
+        color:rgb(46, 159, 173);
+    }
+    .task-bar ul{
+        display:flex;
+        flex-direction:column;
+        
+    }
+    .start-page{
+        /*background-color:rgb(46, 159, 173);*/
+        height:900px;
+        width:800px;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .aboutus-page{
+        background-color:rgb(46,159,173);
+        height:520px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:800px;
+      
+    }
+    .aboutus-body{
+        margin-top:530px;
+        text-align:center;
+        color:rgb(61, 60, 60);
+        font-weight:bold;
+    }
+    .services-page{
+        background-color:rgb(46,159,173);
+        width:800px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:450px;
+    }
+    .services-data{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-left:50px;
+        margin-top:390px;
+    }
+    .contact-page{
+        background-color:rgb(46,159,173);
+        height:500px;
+        width:800px;
+        position:absolute;
+        top:0px;
+        left:0px; 
+     }
+     .body-contactpage{
+         margin-top:550px;
+     }
+     .login-registerpage{
+        background-color:rgb(46, 159, 173);
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:800px;
+    }
+    .login-register{
+        margin-top:500px;
+    }
+    .role-page{
+        background-image:url("canvas-header.jpg");
+        background-color:rgb(243, 175, 49);
+        background-repeat: no-repeat;
+        background-size:800px 300px;
+        height:300px;
+        margin:0px;
+        overflow:hidden;
+        padding:0px;
+        outline:0;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    .login-role{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        margin-top:200px;
+        margin-left:20px;
+    }
+    .login-role .role{
+        margin-top:100px;
+        
+    }
+    .login-role .role a{
+        padding:40px;
+    }
+    .management{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top:100px;
+        margin-left:50px;
+    }
+    .management .element{
+        padding:50px;
+    }
+    .management .element img{
+        margin-left:150px;
+    }
+    .professor-navigation{
+        color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    #professor-page{
+        background-image:url(bg.jpg);
+        background-color:rgb(1,17,68);
+        background-size:800px 20000px ;
+        background-repeat: no-repeat;
+    }
+    
+    #login-heading{
+        margin-top:400px;
+        margin-right:500px;
+        text-align: center;
+
+    }
+    .student-login{
+        margin-top:50px;
+        margin-left:300px;
+    }
+    .management .element{
+        display:flex;
+        flex-direction: column;
+    }
+    .admin-navigation{
+        color:black;
+        display:flex;
+        flex-direction: column;
+    
+    }
+    .admin-insights{
+        display:flex;
+        margin-left:0px;
+        flex-direction:column;
+    }
+    .admin-homepage{
+        display:flex;
+        flex-direction: column;
+    }
+ 
+}
+/*PAGE-RESPONSIVENESS FOR MOBILES*/
+@media only screen and (max-width:480px)
+{
+    #slider-image{max-width:100%}
+    #flash-ad{display:none;}
+    .nav-pages ul{
+        display:flex;
+        flex-direction:column;
+    }
+    .home-nav-pages ul{
+        display:flex;
+        flex-direction:column;
+      
+    }
+    #home-page{
+        background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(homebg.jpg);
+        background-repeat:no-repeat;
+        background-size:470px 1200px;
+    }
+    .home-nav-bar{
+        color:black;
+        display:flex;
+        justify-content: space-between;
+    }
+    .home-nav-pages li a{
+        color:rgb(46, 159, 173);
+        text-decoration: none;
+        display:block;
+        padding:1rem;
+    }
+    .home-nav-pages li a:hover{
+        background-color:rgba(255, 245, 238, 0.815);
+        color:rgb(46, 159, 173);
+    }
+    .task-bar ul{
+        display:flex;
+        flex-direction:column;
+    }
+    .start-page{
+        /*background-color:rgb(46, 159, 173);*/
+        height:700px;
+        width:470px;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .aboutus-page{
+        background-color:rgb(46,159,173);
+        height:520px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        width: 470px;
+      
+    }
+    .aboutus-body{
+        margin-top:530px;
+        text-align:center;
+        margin-left:30px;
+        color:rgb(61, 60, 60);
+        font-weight:bold;
+    }
+    .services-page{
+        background-color:rgb(46,159,173);
+        width:470px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:410px;
+    }
+    .services-data{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-left:100px;
+        margin-top:390px;
+    }
+    .contact-page{
+        background-color:rgb(46,159,173);
+        height:500px;
+        width:460px;
+        position:absolute;
+        top:0px;
+        left:0px; 
+     }
+     .body-contactpage{
+         margin-top:520px;
+         margin-left:30px;
+     }
+     .contact-form textarea{
+        padding:10px 20px;
+        border:1px solid rgb(46,159,173);
+        color:white;
+        height:200px;
+        width:300px;
+    }
+    .login-registerpage{
+        background-color:rgb(46, 159, 173);
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:460px;
+        height:500px;
+    }
+    .login-register{
+        margin-top:600px;
+        margin-left:100px;
+    }
+    .role-page{
+        background-image:url("canvas-header.jpg");
+        background-color:rgb(243, 175, 49);
+        background-repeat: no-repeat;
+        background-size:460px 500px;
+        height:300px;
+        margin:0px;
+        overflow:hidden;
+        padding:0px;
+        outline:0;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    .login-role{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        margin-top:150px;
+        margin-left:0px;
+    }
+    .login-role .role{
+        margin-top:100px;
+        
+    }
+    .login-role .role a{
+        padding:40px;
+    }
+    .management{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top:100px;
+        
+    }
+    .management .element{
+        padding:0px;
+        margin-right:100px;
+        
+    }
+    .element img{
+        border:0px solid black;
+    }
+   
+    #professor-page{
+        /*background-color:rgb(97, 164, 173);*/
+        background-image: url("bg.jpg");
+        background-color:rgb(1,17,68);
+        background-size:450px 10000px ;
+        background-repeat: no-repeat;
+    }
+    #login-heading{
+        margin-top:500px;
+        margin-right:800px;
+
+    }
+    .student-login{
+        margin-top:50px;
+        margin-left:100px;
+    }
+    .admin-navigation{
+        color:black;
+        display:flex;
+        flex-direction: column;
+    
+    }
+    .admin-insights{
+        display:flex;
+        margin-left:0px;
+        flex-direction:column;
+    }
+    .admin-homepage{
+        display:flex;
+        flex-direction: column;
+    }
+    
+}
